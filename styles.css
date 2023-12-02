@@ -1,0 +1,150 @@
+body {
+    font-family: 'GODOFWAR', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/kratos.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@font-face {
+    font-family: 'GODOFWAR';
+    src: url('fonts/GODOFWAR.TTF') format('truetype'),
+         url('fonts/GODOFWAR.TTF') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@media (orientation: portrait) {
+    body {
+        background-image: url("img/mobile.jpg");
+		color:#f0f0f0;
+		font-size: 12px;
+	}
+		.custom-link {
+    position:fixed;
+	top: 15%;
+}
+	.kratos,
+.a-choice-from-the-gods-is-as-useless-as-the-gods-themselves {
+    
+	text-align: center;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    font: 400 26px "GODOFWAR", sans-serif;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	padding-left: 20vw;
+	padding-right: 20vw;
+}
+	}
+	@media screen and (orientation: landscape) {
+    body {
+        background-image: url("img/kratos.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+		color: #0f0f0f;
+		}
+	
+	.custom-link {
+    position:fixed;
+	top: 30%;
+}
+		.kratos,
+.a-choice-from-the-gods-is-as-useless-as-the-gods-themselves {
+    
+	text-align: center;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    font: 400 48px "GODOFWAR", sans-serif;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	padding-left: 20vw;
+	padding-right: 20vw;
+}
+    }
+.frame-1,
+.frame-1 * {
+    box-sizing: border-box;
+}
+
+.frame-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+	width: 100vw;
+	height:100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.frame-2 {
+
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    top: 0px;
+	height: 15vh;
+    overflow: hidden;
+}
+.frame-3 {
+
+    padding: 45px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: fixed;
+    overflow: hidden;
+	bottom:0;
+}
+/* Reset some default styles for the link */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Style for the custom link */
+.custom-link {
+    display: inline; /* Set display to inline */
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 36px;
+    font-weight: bold;
+    position:fixed;
+    background-color: #0F0F0F; /* Choose your desired background color */
+    color: #F0F0F0; /* Choose your desired text color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.custom-link:hover {
+    background-color: #424242; /* Choose your desired hover background color */
+}
+.frame-2 img {
+    max-width: 90%;
+	height:auto;
+    display: flex;
+    margin: 0 auto;
+	padding: 20px;
+}
+.frame-2 .blur-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    filter: blur(20px); /* Adjust the blur radius as needed */
+}
